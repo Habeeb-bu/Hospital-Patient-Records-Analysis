@@ -1,0 +1,2724 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='ed098e1a4552f19e0b33575344bb7c457fa82f969437c5f48566451d558160e2' _.fcp.WorkbookFingerprinting.true...creator-author-id='ed098e1a4552f19e0b33575344bb7c457fa82f969437c5f48566451d558160e2' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='ed098e1a4552f19e0b33575344bb7c457fa82f969437c5f48566451d558160e2' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='ed098e1a4552f19e0b33575344bb7c457fa82f969437c5f48566451d558160e2' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='data_dictionary+' inline='true' name='federated.06ep5dx120xmpz11anu1v02e298n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_dictionary' name='textscan.1v03thl19st9or11a9sqo1sdji21'>
+            <connection class='textscan' directory='C:/Users/Habee/Documents/Tableau_Practice/Hospital-Patient-Records-Analysis/Dataset' filename='data_dictionary.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='encounters.csv' table='[encounters#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Id' ordinal='0' />
+              <column datatype='datetime' name='START' ordinal='1' />
+              <column datatype='datetime' name='STOP' ordinal='2' />
+              <column datatype='string' name='PATIENT' ordinal='3' />
+              <column datatype='string' name='ORGANIZATION' ordinal='4' />
+              <column datatype='string' name='PAYER' ordinal='5' />
+              <column datatype='string' name='ENCOUNTERCLASS' ordinal='6' />
+              <column datatype='integer' name='CODE' ordinal='7' />
+              <column datatype='string' name='DESCRIPTION' ordinal='8' />
+              <column datatype='real' name='BASE_ENCOUNTER_COST' ordinal='9' />
+              <column datatype='real' name='TOTAL_CLAIM_COST' ordinal='10' />
+              <column datatype='real' name='PAYER_COVERAGE' ordinal='11' />
+              <column datatype='integer' name='REASONCODE' ordinal='12' />
+              <column datatype='string' name='REASONDESCRIPTION' ordinal='13' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='data_dictionary.csv' table='[data_dictionary#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Table' ordinal='0' />
+              <column datatype='string' name='Field' ordinal='1' />
+              <column datatype='string' name='Description' ordinal='2' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='organizations.csv' table='[organizations#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Id' ordinal='0' />
+              <column datatype='string' name='NAME' ordinal='1' />
+              <column datatype='string' name='ADDRESS' ordinal='2' />
+              <column datatype='string' name='CITY' ordinal='3' />
+              <column datatype='string' name='STATE' ordinal='4' />
+              <column datatype='integer' name='ZIP' ordinal='5' />
+              <column datatype='real' name='LAT' ordinal='6' />
+              <column datatype='real' name='LON' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='patients.csv' table='[patients#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Id' ordinal='0' />
+              <column datatype='date' name='BIRTHDATE' ordinal='1' />
+              <column datatype='date' name='DEATHDATE' ordinal='2' />
+              <column datatype='string' name='PREFIX' ordinal='3' />
+              <column datatype='string' name='FIRST' ordinal='4' />
+              <column datatype='string' name='LAST' ordinal='5' />
+              <column datatype='string' name='SUFFIX' ordinal='6' />
+              <column datatype='string' name='MAIDEN' ordinal='7' />
+              <column datatype='string' name='MARITAL' ordinal='8' />
+              <column datatype='string' name='RACE' ordinal='9' />
+              <column datatype='string' name='ETHNICITY' ordinal='10' />
+              <column datatype='string' name='GENDER' ordinal='11' />
+              <column datatype='string' name='BIRTHPLACE' ordinal='12' />
+              <column datatype='string' name='ADDRESS' ordinal='13' />
+              <column datatype='string' name='CITY' ordinal='14' />
+              <column datatype='string' name='STATE' ordinal='15' />
+              <column datatype='string' name='COUNTY' ordinal='16' />
+              <column datatype='integer' name='ZIP' ordinal='17' />
+              <column datatype='real' name='LAT' ordinal='18' />
+              <column datatype='real' name='LON' ordinal='19' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='procedures.csv' table='[procedures#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='datetime' name='START' ordinal='0' />
+              <column datatype='datetime' name='STOP' ordinal='1' />
+              <column datatype='string' name='PATIENT' ordinal='2' />
+              <column datatype='string' name='ENCOUNTER' ordinal='3' />
+              <column datatype='integer' name='CODE' ordinal='4' />
+              <column datatype='string' name='DESCRIPTION' ordinal='5' />
+              <column datatype='integer' name='BASE_COST' ordinal='6' />
+              <column datatype='integer' name='REASONCODE' ordinal='7' />
+              <column datatype='string' name='REASONDESCRIPTION' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='payers.csv' table='[payers#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Id' ordinal='0' />
+              <column datatype='string' name='NAME' ordinal='1' />
+              <column datatype='string' name='ADDRESS' ordinal='2' />
+              <column datatype='string' name='CITY' ordinal='3' />
+              <column datatype='string' name='STATE_HEADQUARTERED' ordinal='4' />
+              <column datatype='integer' name='ZIP' ordinal='5' />
+              <column datatype='string' name='PHONE' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='procedures.csv1' table='[procedures#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='datetime' name='START' ordinal='0' />
+              <column datatype='datetime' name='STOP' ordinal='1' />
+              <column datatype='string' name='PATIENT' ordinal='2' />
+              <column datatype='string' name='ENCOUNTER' ordinal='3' />
+              <column datatype='integer' name='CODE' ordinal='4' />
+              <column datatype='string' name='DESCRIPTION' ordinal='5' />
+              <column datatype='integer' name='BASE_COST' ordinal='6' />
+              <column datatype='integer' name='REASONCODE' ordinal='7' />
+              <column datatype='string' name='REASONDESCRIPTION' ordinal='8' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[ADDRESS (organizations.csv)]' value='[organizations.csv].[ADDRESS]' />
+          <map key='[ADDRESS (payers.csv)]' value='[payers.csv].[ADDRESS]' />
+          <map key='[ADDRESS]' value='[patients.csv].[ADDRESS]' />
+          <map key='[BASE_COST (procedures.csv1)]' value='[procedures.csv1].[BASE_COST]' />
+          <map key='[BASE_COST]' value='[procedures.csv].[BASE_COST]' />
+          <map key='[BASE_ENCOUNTER_COST]' value='[encounters.csv].[BASE_ENCOUNTER_COST]' />
+          <map key='[BIRTHDATE]' value='[patients.csv].[BIRTHDATE]' />
+          <map key='[BIRTHPLACE]' value='[patients.csv].[BIRTHPLACE]' />
+          <map key='[CITY (organizations.csv)]' value='[organizations.csv].[CITY]' />
+          <map key='[CITY (payers.csv)]' value='[payers.csv].[CITY]' />
+          <map key='[CITY]' value='[patients.csv].[CITY]' />
+          <map key='[CODE (procedures.csv)]' value='[procedures.csv].[CODE]' />
+          <map key='[CODE (procedures.csv1)]' value='[procedures.csv1].[CODE]' />
+          <map key='[CODE]' value='[encounters.csv].[CODE]' />
+          <map key='[COUNTY]' value='[patients.csv].[COUNTY]' />
+          <map key='[DEATHDATE]' value='[patients.csv].[DEATHDATE]' />
+          <map key='[DESCRIPTION (procedures.csv)]' value='[procedures.csv].[DESCRIPTION]' />
+          <map key='[DESCRIPTION (procedures.csv1)]' value='[procedures.csv1].[DESCRIPTION]' />
+          <map key='[DESCRIPTION]' value='[encounters.csv].[DESCRIPTION]' />
+          <map key='[Description]' value='[data_dictionary.csv].[Description]' />
+          <map key='[ENCOUNTER (procedures.csv1)]' value='[procedures.csv1].[ENCOUNTER]' />
+          <map key='[ENCOUNTERCLASS]' value='[encounters.csv].[ENCOUNTERCLASS]' />
+          <map key='[ENCOUNTER]' value='[procedures.csv].[ENCOUNTER]' />
+          <map key='[ETHNICITY]' value='[patients.csv].[ETHNICITY]' />
+          <map key='[FIRST]' value='[patients.csv].[FIRST]' />
+          <map key='[Field]' value='[data_dictionary.csv].[Field]' />
+          <map key='[GENDER]' value='[patients.csv].[GENDER]' />
+          <map key='[Id (organizations.csv)]' value='[organizations.csv].[Id]' />
+          <map key='[Id (patients.csv)]' value='[patients.csv].[Id]' />
+          <map key='[Id (payers.csv)]' value='[payers.csv].[Id]' />
+          <map key='[Id]' value='[encounters.csv].[Id]' />
+          <map key='[LAST]' value='[patients.csv].[LAST]' />
+          <map key='[LAT (organizations.csv)]' value='[organizations.csv].[LAT]' />
+          <map key='[LAT]' value='[patients.csv].[LAT]' />
+          <map key='[LON (organizations.csv)]' value='[organizations.csv].[LON]' />
+          <map key='[LON]' value='[patients.csv].[LON]' />
+          <map key='[MAIDEN]' value='[patients.csv].[MAIDEN]' />
+          <map key='[MARITAL]' value='[patients.csv].[MARITAL]' />
+          <map key='[NAME (payers.csv)]' value='[payers.csv].[NAME]' />
+          <map key='[NAME]' value='[organizations.csv].[NAME]' />
+          <map key='[ORGANIZATION]' value='[encounters.csv].[ORGANIZATION]' />
+          <map key='[PATIENT (procedures.csv)]' value='[procedures.csv].[PATIENT]' />
+          <map key='[PATIENT (procedures.csv1)]' value='[procedures.csv1].[PATIENT]' />
+          <map key='[PATIENT]' value='[encounters.csv].[PATIENT]' />
+          <map key='[PAYER]' value='[encounters.csv].[PAYER]' />
+          <map key='[PAYER_COVERAGE]' value='[encounters.csv].[PAYER_COVERAGE]' />
+          <map key='[PHONE]' value='[payers.csv].[PHONE]' />
+          <map key='[PREFIX]' value='[patients.csv].[PREFIX]' />
+          <map key='[RACE]' value='[patients.csv].[RACE]' />
+          <map key='[REASONCODE (procedures.csv)]' value='[procedures.csv].[REASONCODE]' />
+          <map key='[REASONCODE (procedures.csv1)]' value='[procedures.csv1].[REASONCODE]' />
+          <map key='[REASONCODE]' value='[encounters.csv].[REASONCODE]' />
+          <map key='[REASONDESCRIPTION (procedures.csv)]' value='[procedures.csv].[REASONDESCRIPTION]' />
+          <map key='[REASONDESCRIPTION (procedures.csv1)]' value='[procedures.csv1].[REASONDESCRIPTION]' />
+          <map key='[REASONDESCRIPTION]' value='[encounters.csv].[REASONDESCRIPTION]' />
+          <map key='[START (procedures.csv)]' value='[procedures.csv].[START]' />
+          <map key='[START (procedures.csv1)]' value='[procedures.csv1].[START]' />
+          <map key='[START]' value='[encounters.csv].[START]' />
+          <map key='[STATE (organizations.csv)]' value='[organizations.csv].[STATE]' />
+          <map key='[STATE]' value='[patients.csv].[STATE]' />
+          <map key='[STATE_HEADQUARTERED]' value='[payers.csv].[STATE_HEADQUARTERED]' />
+          <map key='[STOP (procedures.csv)]' value='[procedures.csv].[STOP]' />
+          <map key='[STOP (procedures.csv1)]' value='[procedures.csv1].[STOP]' />
+          <map key='[STOP]' value='[encounters.csv].[STOP]' />
+          <map key='[SUFFIX]' value='[patients.csv].[SUFFIX]' />
+          <map key='[TOTAL_CLAIM_COST]' value='[encounters.csv].[TOTAL_CLAIM_COST]' />
+          <map key='[Table]' value='[data_dictionary.csv].[Table]' />
+          <map key='[ZIP (organizations.csv)]' value='[organizations.csv].[ZIP]' />
+          <map key='[ZIP (payers.csv)]' value='[payers.csv].[ZIP]' />
+          <map key='[ZIP]' value='[patients.csv].[ZIP]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_dictionary.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Id]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>START</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[START]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>START</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOP</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[STOP]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>STOP</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PATIENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PATIENT]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>PATIENT</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORGANIZATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ORGANIZATION]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>ORGANIZATION</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAYER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PAYER]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>PAYER</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENCOUNTERCLASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENCOUNTERCLASS]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>ENCOUNTERCLASS</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CODE]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>CODE</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DESCRIPTION]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>DESCRIPTION</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASE_ENCOUNTER_COST</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[BASE_ENCOUNTER_COST]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>BASE_ENCOUNTER_COST</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL_CLAIM_COST</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[TOTAL_CLAIM_COST]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>TOTAL_CLAIM_COST</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PAYER_COVERAGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PAYER_COVERAGE]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>PAYER_COVERAGE</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REASONCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REASONCODE]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>REASONCODE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REASONDESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REASONDESCRIPTION]</local-name>
+            <parent-name>[encounters.csv]</parent-name>
+            <remote-alias>REASONDESCRIPTION</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table]</local-name>
+            <parent-name>[data_dictionary.csv]</parent-name>
+            <remote-alias>Table</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Field]</local-name>
+            <parent-name>[data_dictionary.csv]</parent-name>
+            <remote-alias>Field</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[data_dictionary.csv]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Id (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADDRESS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADDRESS (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>ADDRESS</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>ZIP</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LAT (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>LAT</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LON (organizations.csv)]</local-name>
+            <parent-name>[organizations.csv]</parent-name>
+            <remote-alias>LON</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Id (patients.csv)]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIRTHDATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[BIRTHDATE]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>BIRTHDATE</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DEATHDATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[DEATHDATE]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>DEATHDATE</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREFIX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PREFIX]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>PREFIX</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIRST</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIRST]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>FIRST</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAST</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LAST]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>LAST</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SUFFIX</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SUFFIX]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>SUFFIX</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAIDEN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MAIDEN]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>MAIDEN</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARITAL</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MARITAL]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>MARITAL</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RACE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RACE]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>RACE</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ETHNICITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ETHNICITY]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>ETHNICITY</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GENDER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GENDER]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>GENDER</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIRTHPLACE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BIRTHPLACE]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>BIRTHPLACE</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADDRESS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADDRESS]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>ADDRESS</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COUNTY]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>COUNTY</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>ZIP</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LAT]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>LAT</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LON]</local-name>
+            <parent-name>[patients.csv]</parent-name>
+            <remote-alias>LON</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>START</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[START (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>START</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOP</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[STOP (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>STOP</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PATIENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PATIENT (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>PATIENT</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENCOUNTER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENCOUNTER]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>ENCOUNTER</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CODE (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>CODE</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DESCRIPTION (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>DESCRIPTION</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASE_COST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BASE_COST]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>BASE_COST</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REASONCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REASONCODE (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>REASONCODE</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REASONDESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REASONDESCRIPTION (procedures.csv)]</local-name>
+            <parent-name>[procedures.csv]</parent-name>
+            <remote-alias>REASONDESCRIPTION</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Id (payers.csv)]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>Id</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME (payers.csv)]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ADDRESS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ADDRESS (payers.csv)]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>ADDRESS</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY (payers.csv)]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE_HEADQUARTERED</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE_HEADQUARTERED]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>STATE_HEADQUARTERED</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIP (payers.csv)]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>ZIP</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PHONE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PHONE]</local-name>
+            <parent-name>[payers.csv]</parent-name>
+            <remote-alias>PHONE</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>START</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[START (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>START</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STOP</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[STOP (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>STOP</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PATIENT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PATIENT (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>PATIENT</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENCOUNTER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENCOUNTER (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>ENCOUNTER</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CODE (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>CODE</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DESCRIPTION (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>DESCRIPTION</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASE_COST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BASE_COST (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>BASE_COST</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REASONCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[REASONCODE (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>REASONCODE</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REASONDESCRIPTION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REASONDESCRIPTION (procedures.csv1)]</local-name>
+            <parent-name>[procedures.csv1]</parent-name>
+            <remote-alias>REASONDESCRIPTION</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Address' datatype='string' name='[ADDRESS]' role='dimension' type='nominal' />
+      <column caption='BASE COST (procedures.csv1)' datatype='integer' name='[BASE_COST (procedures.csv1)]' role='measure' type='quantitative' />
+      <column caption='Base Cost' datatype='integer' name='[BASE_COST]' role='measure' type='quantitative' />
+      <column caption='Base Encounter Cost' datatype='real' name='[BASE_ENCOUNTER_COST]' role='measure' type='quantitative' />
+      <column caption='Birthdate' datatype='date' name='[BIRTHDATE]' role='dimension' type='ordinal' />
+      <column caption='Birthplace' datatype='string' name='[BIRTHPLACE]' role='dimension' type='nominal' />
+      <column datatype='string' name='[CITY (organizations.csv)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[CITY (payers.csv)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='City' datatype='string' name='[CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[CODE (procedures.csv)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[CODE (procedures.csv1)]' role='dimension' type='ordinal' />
+      <column caption='Code' datatype='integer' name='[CODE]' role='dimension' type='ordinal' />
+      <column caption='County' datatype='string' name='[COUNTY]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Deathdate' datatype='date' name='[DEATHDATE]' role='dimension' type='ordinal' />
+      <column caption='Description1' datatype='string' name='[DESCRIPTION]' role='dimension' type='nominal' />
+      <column caption='Encounterclass' datatype='string' name='[ENCOUNTERCLASS]' role='dimension' type='nominal' />
+      <column caption='Encounter' datatype='string' name='[ENCOUNTER]' role='dimension' type='nominal' />
+      <column caption='Ethnicity' datatype='string' name='[ETHNICITY]' role='dimension' type='nominal' />
+      <column caption='First' datatype='string' name='[FIRST]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[GENDER]' role='dimension' type='nominal' />
+      <column caption='Last' datatype='string' name='[LAST]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[LAT (organizations.csv)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[LON (organizations.csv)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Maiden' datatype='string' name='[MAIDEN]' role='dimension' type='nominal' />
+      <column caption='Marital' datatype='string' name='[MARITAL]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column caption='Organization' datatype='string' name='[ORGANIZATION]' role='dimension' type='nominal' />
+      <column caption='Patient' datatype='string' name='[PATIENT]' role='dimension' type='nominal' />
+      <column caption='Payer' datatype='string' name='[PAYER]' role='dimension' type='nominal' />
+      <column caption='Payer Coverage' datatype='real' name='[PAYER_COVERAGE]' role='measure' type='quantitative' />
+      <column caption='Phone' datatype='string' name='[PHONE]' role='dimension' type='nominal' />
+      <column caption='Prefix' datatype='string' name='[PREFIX]' role='dimension' type='nominal' />
+      <column caption='Race' datatype='string' name='[RACE]' role='dimension' type='nominal' />
+      <column caption='Reasoncode' datatype='integer' name='[REASONCODE]' role='measure' type='quantitative' />
+      <column caption='Reasondescription' datatype='string' name='[REASONDESCRIPTION]' role='dimension' type='nominal' />
+      <column caption='Start' datatype='datetime' name='[START]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[STATE (organizations.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Headquartered' datatype='string' name='[STATE_HEADQUARTERED]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Stop' datatype='datetime' name='[STOP]' role='dimension' type='ordinal' />
+      <column caption='Suffix' datatype='string' name='[SUFFIX]' role='dimension' type='nominal' />
+      <column caption='Total Claim Cost' datatype='real' name='[TOTAL_CLAIM_COST]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[ZIP (organizations.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[ZIP (payers.csv)]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' default-format='*00000' name='[ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='data_dictionary.csv' datatype='table' name='[__tableau_internal_object_id__].[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]' role='measure' type='quantitative' />
+      <column caption='encounters.csv' datatype='table' name='[__tableau_internal_object_id__].[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]' role='measure' type='quantitative' />
+      <column caption='organizations.csv' datatype='table' name='[__tableau_internal_object_id__].[organizations.csv_0BC7E1D922E94CF894175863D08340C7]' role='measure' type='quantitative' />
+      <column caption='patients.csv' datatype='table' name='[__tableau_internal_object_id__].[patients.csv_7AFDA4383B6F48A59F00489753452583]' role='measure' type='quantitative' />
+      <column caption='payers.csv' datatype='table' name='[__tableau_internal_object_id__].[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]' role='measure' type='quantitative' />
+      <column caption='procedures.csv' datatype='table' name='[__tableau_internal_object_id__].[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]' role='measure' type='quantitative' />
+      <column caption='procedures.csv1' datatype='table' name='[__tableau_internal_object_id__].[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Habee/AppData/Local/Temp/TableauTemp/#TableauTemp_1ncrzsk1n4qnn31bd8o5u117420p.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='09/08/2026 05:50:27 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' table='[Extract].[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]' type='table' />
+            <relation name='data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D' table='[Extract].[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]' type='table' />
+            <relation name='organizations.csv_0BC7E1D922E94CF894175863D08340C7' table='[Extract].[organizations.csv_0BC7E1D922E94CF894175863D08340C7]' type='table' />
+            <relation name='patients.csv_7AFDA4383B6F48A59F00489753452583' table='[Extract].[patients.csv_7AFDA4383B6F48A59F00489753452583]' type='table' />
+            <relation name='procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C' table='[Extract].[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]' type='table' />
+            <relation name='payers.csv_99D48F1B105A4A6C8F477E3958AB79BF' table='[Extract].[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]' type='table' />
+            <relation name='procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0' table='[Extract].[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]' type='table' />
+          </relation>
+          <cols>
+            <map key='[ADDRESS (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[ADDRESS]' />
+            <map key='[ADDRESS (payers.csv)]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[ADDRESS]' />
+            <map key='[ADDRESS]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[ADDRESS]' />
+            <map key='[BASE_COST (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[BASE_COST]' />
+            <map key='[BASE_COST]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[BASE_COST]' />
+            <map key='[BASE_ENCOUNTER_COST]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[BASE_ENCOUNTER_COST]' />
+            <map key='[BIRTHDATE]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[BIRTHDATE]' />
+            <map key='[BIRTHPLACE]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[BIRTHPLACE]' />
+            <map key='[CITY (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[CITY]' />
+            <map key='[CITY (payers.csv)]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[CITY]' />
+            <map key='[CITY]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[CITY]' />
+            <map key='[CODE (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[CODE]' />
+            <map key='[CODE (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[CODE]' />
+            <map key='[CODE]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[CODE]' />
+            <map key='[COUNTY]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[COUNTY]' />
+            <map key='[DEATHDATE]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[DEATHDATE]' />
+            <map key='[DESCRIPTION (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[DESCRIPTION]' />
+            <map key='[DESCRIPTION (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[DESCRIPTION]' />
+            <map key='[DESCRIPTION]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[DESCRIPTION]' />
+            <map key='[Description]' value='[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D].[Description]' />
+            <map key='[ENCOUNTER (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[ENCOUNTER]' />
+            <map key='[ENCOUNTERCLASS]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[ENCOUNTERCLASS]' />
+            <map key='[ENCOUNTER]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[ENCOUNTER]' />
+            <map key='[ETHNICITY]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[ETHNICITY]' />
+            <map key='[FIRST]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[FIRST]' />
+            <map key='[Field]' value='[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D].[Field]' />
+            <map key='[GENDER]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[GENDER]' />
+            <map key='[Id (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[Id]' />
+            <map key='[Id (patients.csv)]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[Id]' />
+            <map key='[Id (payers.csv)]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[Id]' />
+            <map key='[Id]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[Id]' />
+            <map key='[LAST]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[LAST]' />
+            <map key='[LAT (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[LAT]' />
+            <map key='[LAT]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[LAT]' />
+            <map key='[LON (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[LON]' />
+            <map key='[LON]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[LON]' />
+            <map key='[MAIDEN]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[MAIDEN]' />
+            <map key='[MARITAL]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[MARITAL]' />
+            <map key='[NAME (payers.csv)]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[NAME]' />
+            <map key='[NAME]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[NAME]' />
+            <map key='[ORGANIZATION]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[ORGANIZATION]' />
+            <map key='[PATIENT (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[PATIENT]' />
+            <map key='[PATIENT (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[PATIENT]' />
+            <map key='[PATIENT]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[PATIENT]' />
+            <map key='[PAYER]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[PAYER]' />
+            <map key='[PAYER_COVERAGE]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[PAYER_COVERAGE]' />
+            <map key='[PHONE]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[PHONE]' />
+            <map key='[PREFIX]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[PREFIX]' />
+            <map key='[RACE]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[RACE]' />
+            <map key='[REASONCODE (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[REASONCODE]' />
+            <map key='[REASONCODE (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[REASONCODE]' />
+            <map key='[REASONCODE]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[REASONCODE]' />
+            <map key='[REASONDESCRIPTION (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[REASONDESCRIPTION]' />
+            <map key='[REASONDESCRIPTION (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[REASONDESCRIPTION]' />
+            <map key='[REASONDESCRIPTION]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[REASONDESCRIPTION]' />
+            <map key='[START (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[START]' />
+            <map key='[START (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[START]' />
+            <map key='[START]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[START]' />
+            <map key='[STATE (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[STATE]' />
+            <map key='[STATE]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[STATE]' />
+            <map key='[STATE_HEADQUARTERED]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[STATE_HEADQUARTERED]' />
+            <map key='[STOP (procedures.csv)]' value='[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C].[STOP]' />
+            <map key='[STOP (procedures.csv1)]' value='[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0].[STOP]' />
+            <map key='[STOP]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[STOP]' />
+            <map key='[SUFFIX]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[SUFFIX]' />
+            <map key='[TOTAL_CLAIM_COST]' value='[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5].[TOTAL_CLAIM_COST]' />
+            <map key='[Table]' value='[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D].[Table]' />
+            <map key='[ZIP (organizations.csv)]' value='[organizations.csv_0BC7E1D922E94CF894175863D08340C7].[ZIP]' />
+            <map key='[ZIP (payers.csv)]' value='[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF].[ZIP]' />
+            <map key='[ZIP]' value='[patients.csv_7AFDA4383B6F48A59F00489753452583].[ZIP]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27891</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>START</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[START]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>START</remote-alias>
+              <ordinal>1</ordinal>
+              <family>encounters.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>27891</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STOP</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[STOP]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>STOP</remote-alias>
+              <ordinal>2</ordinal>
+              <family>encounters.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>27891</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PATIENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PATIENT]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>PATIENT</remote-alias>
+              <ordinal>3</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1290</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ORGANIZATION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ORGANIZATION]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>ORGANIZATION</remote-alias>
+              <ordinal>4</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PAYER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PAYER]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>PAYER</remote-alias>
+              <ordinal>5</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ENCOUNTERCLASS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ENCOUNTERCLASS]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>ENCOUNTERCLASS</remote-alias>
+              <ordinal>6</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CODE]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>CODE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>encounters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DESCRIPTION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DESCRIPTION]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>DESCRIPTION</remote-alias>
+              <ordinal>8</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BASE_ENCOUNTER_COST</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[BASE_ENCOUNTER_COST]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>BASE_ENCOUNTER_COST</remote-alias>
+              <ordinal>9</ordinal>
+              <family>encounters.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TOTAL_CLAIM_COST</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[TOTAL_CLAIM_COST]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>TOTAL_CLAIM_COST</remote-alias>
+              <ordinal>10</ordinal>
+              <family>encounters.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PAYER_COVERAGE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PAYER_COVERAGE]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>PAYER_COVERAGE</remote-alias>
+              <ordinal>11</ordinal>
+              <family>encounters.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2342</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REASONCODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[REASONCODE]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>REASONCODE</remote-alias>
+              <ordinal>12</ordinal>
+              <family>encounters.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REASONDESCRIPTION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[REASONDESCRIPTION]</local-name>
+              <parent-name>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</parent-name>
+              <remote-alias>REASONDESCRIPTION</remote-alias>
+              <ordinal>13</ordinal>
+              <family>encounters.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table]</local-name>
+              <parent-name>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</parent-name>
+              <remote-alias>Table</remote-alias>
+              <ordinal>14</ordinal>
+              <family>data_dictionary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Field</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Field]</local-name>
+              <parent-name>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</parent-name>
+              <remote-alias>Field</remote-alias>
+              <ordinal>15</ordinal>
+              <family>data_dictionary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Description]</local-name>
+              <parent-name>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</parent-name>
+              <remote-alias>Description</remote-alias>
+              <ordinal>16</ordinal>
+              <family>data_dictionary.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>17</ordinal>
+              <family>organizations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>18</ordinal>
+              <family>organizations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ADDRESS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ADDRESS (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>ADDRESS</remote-alias>
+              <ordinal>19</ordinal>
+              <family>organizations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CITY (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>CITY</remote-alias>
+              <ordinal>20</ordinal>
+              <family>organizations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>STATE</remote-alias>
+              <ordinal>21</ordinal>
+              <family>organizations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZIP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ZIP (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>ZIP</remote-alias>
+              <ordinal>22</ordinal>
+              <family>organizations.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LAT (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>LAT</remote-alias>
+              <ordinal>23</ordinal>
+              <family>organizations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LON</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LON (organizations.csv)]</local-name>
+              <parent-name>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</parent-name>
+              <remote-alias>LON</remote-alias>
+              <ordinal>24</ordinal>
+              <family>organizations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[organizations.csv_0BC7E1D922E94CF894175863D08340C7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id (patients.csv)]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>25</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>974</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BIRTHDATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[BIRTHDATE]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>BIRTHDATE</remote-alias>
+              <ordinal>26</ordinal>
+              <family>patients.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>880</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DEATHDATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[DEATHDATE]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>DEATHDATE</remote-alias>
+              <ordinal>27</ordinal>
+              <family>patients.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>149</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PREFIX</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PREFIX]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>PREFIX</remote-alias>
+              <ordinal>28</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>FIRST</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[FIRST]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>FIRST</remote-alias>
+              <ordinal>29</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>842</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LAST</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LAST]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>LAST</remote-alias>
+              <ordinal>30</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>498</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SUFFIX</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SUFFIX]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>SUFFIX</remote-alias>
+              <ordinal>31</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MAIDEN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MAIDEN]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>MAIDEN</remote-alias>
+              <ordinal>32</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>280</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MARITAL</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MARITAL]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>MARITAL</remote-alias>
+              <ordinal>33</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RACE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RACE]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>RACE</remote-alias>
+              <ordinal>34</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ETHNICITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ETHNICITY]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>ETHNICITY</remote-alias>
+              <ordinal>35</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GENDER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GENDER]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>GENDER</remote-alias>
+              <ordinal>36</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BIRTHPLACE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BIRTHPLACE]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>BIRTHPLACE</remote-alias>
+              <ordinal>37</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>297</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ADDRESS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ADDRESS]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>ADDRESS</remote-alias>
+              <ordinal>38</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>974</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CITY]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>CITY</remote-alias>
+              <ordinal>39</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>STATE</remote-alias>
+              <ordinal>40</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNTY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COUNTY]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>COUNTY</remote-alias>
+              <ordinal>41</ordinal>
+              <family>patients.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZIP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ZIP]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>ZIP</remote-alias>
+              <ordinal>42</ordinal>
+              <family>patients.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LAT]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>LAT</remote-alias>
+              <ordinal>43</ordinal>
+              <family>patients.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>974</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LON</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LON]</local-name>
+              <parent-name>[patients.csv_7AFDA4383B6F48A59F00489753452583]</parent-name>
+              <remote-alias>LON</remote-alias>
+              <ordinal>44</ordinal>
+              <family>patients.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>974</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[patients.csv_7AFDA4383B6F48A59F00489753452583]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>START</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[START (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>START</remote-alias>
+              <ordinal>45</ordinal>
+              <family>procedures.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>22305</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STOP</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[STOP (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>STOP</remote-alias>
+              <ordinal>46</ordinal>
+              <family>procedures.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26320</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PATIENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PATIENT (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>PATIENT</remote-alias>
+              <ordinal>47</ordinal>
+              <family>procedures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1369</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ENCOUNTER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ENCOUNTER]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>ENCOUNTER</remote-alias>
+              <ordinal>48</ordinal>
+              <family>procedures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10739</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CODE (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>CODE</remote-alias>
+              <ordinal>49</ordinal>
+              <family>procedures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>245</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DESCRIPTION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DESCRIPTION (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>DESCRIPTION</remote-alias>
+              <ordinal>50</ordinal>
+              <family>procedures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>262</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BASE_COST</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BASE_COST]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>BASE_COST</remote-alias>
+              <ordinal>51</ordinal>
+              <family>procedures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8780</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REASONCODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[REASONCODE (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>REASONCODE</remote-alias>
+              <ordinal>52</ordinal>
+              <family>procedures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REASONDESCRIPTION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[REASONDESCRIPTION (procedures.csv)]</local-name>
+              <parent-name>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</parent-name>
+              <remote-alias>REASONDESCRIPTION</remote-alias>
+              <ordinal>53</ordinal>
+              <family>procedures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Id (payers.csv)]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>Id</remote-alias>
+              <ordinal>54</ordinal>
+              <family>payers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME (payers.csv)]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>55</ordinal>
+              <family>payers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ADDRESS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ADDRESS (payers.csv)]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>ADDRESS</remote-alias>
+              <ordinal>56</ordinal>
+              <family>payers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CITY (payers.csv)]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>CITY</remote-alias>
+              <ordinal>57</ordinal>
+              <family>payers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE_HEADQUARTERED</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE_HEADQUARTERED]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>STATE_HEADQUARTERED</remote-alias>
+              <ordinal>58</ordinal>
+              <family>payers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZIP</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ZIP (payers.csv)]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>ZIP</remote-alias>
+              <ordinal>59</ordinal>
+              <family>payers.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PHONE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PHONE]</local-name>
+              <parent-name>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</parent-name>
+              <remote-alias>PHONE</remote-alias>
+              <ordinal>60</ordinal>
+              <family>payers.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>START</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[START (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>START</remote-alias>
+              <ordinal>61</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>22305</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STOP</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[STOP (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>STOP</remote-alias>
+              <ordinal>62</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>26320</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PATIENT</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PATIENT (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>PATIENT</remote-alias>
+              <ordinal>63</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1369</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ENCOUNTER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ENCOUNTER (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>ENCOUNTER</remote-alias>
+              <ordinal>64</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10739</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CODE (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>CODE</remote-alias>
+              <ordinal>65</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>245</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DESCRIPTION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DESCRIPTION (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>DESCRIPTION</remote-alias>
+              <ordinal>66</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>262</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BASE_COST</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BASE_COST (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>BASE_COST</remote-alias>
+              <ordinal>67</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8780</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REASONCODE</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[REASONCODE (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>REASONCODE</remote-alias>
+              <ordinal>68</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REASONDESCRIPTION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[REASONDESCRIPTION (procedures.csv1)]</local-name>
+              <parent-name>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</parent-name>
+              <remote-alias>REASONDESCRIPTION</remote-alias>
+              <ordinal>69</ordinal>
+              <family>procedures.csv1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>78</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='data_dictionary.csv' id='data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='data_dictionary.csv' table='[data_dictionary#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Table' ordinal='0' />
+                  <column datatype='string' name='Field' ordinal='1' />
+                  <column datatype='string' name='Description' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D' table='[Extract].[data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D]' type='table' />
+            </properties>
+          </object>
+          <object caption='encounters.csv' id='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='encounters.csv' table='[encounters#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Id' ordinal='0' />
+                  <column datatype='datetime' name='START' ordinal='1' />
+                  <column datatype='datetime' name='STOP' ordinal='2' />
+                  <column datatype='string' name='PATIENT' ordinal='3' />
+                  <column datatype='string' name='ORGANIZATION' ordinal='4' />
+                  <column datatype='string' name='PAYER' ordinal='5' />
+                  <column datatype='string' name='ENCOUNTERCLASS' ordinal='6' />
+                  <column datatype='integer' name='CODE' ordinal='7' />
+                  <column datatype='string' name='DESCRIPTION' ordinal='8' />
+                  <column datatype='real' name='BASE_ENCOUNTER_COST' ordinal='9' />
+                  <column datatype='real' name='TOTAL_CLAIM_COST' ordinal='10' />
+                  <column datatype='real' name='PAYER_COVERAGE' ordinal='11' />
+                  <column datatype='integer' name='REASONCODE' ordinal='12' />
+                  <column datatype='string' name='REASONDESCRIPTION' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' table='[Extract].[encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5]' type='table' />
+            </properties>
+          </object>
+          <object caption='organizations.csv' id='organizations.csv_0BC7E1D922E94CF894175863D08340C7'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='organizations.csv' table='[organizations#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Id' ordinal='0' />
+                  <column datatype='string' name='NAME' ordinal='1' />
+                  <column datatype='string' name='ADDRESS' ordinal='2' />
+                  <column datatype='string' name='CITY' ordinal='3' />
+                  <column datatype='string' name='STATE' ordinal='4' />
+                  <column datatype='integer' name='ZIP' ordinal='5' />
+                  <column datatype='real' name='LAT' ordinal='6' />
+                  <column datatype='real' name='LON' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='organizations.csv_0BC7E1D922E94CF894175863D08340C7' table='[Extract].[organizations.csv_0BC7E1D922E94CF894175863D08340C7]' type='table' />
+            </properties>
+          </object>
+          <object caption='patients.csv' id='patients.csv_7AFDA4383B6F48A59F00489753452583'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='patients.csv' table='[patients#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Id' ordinal='0' />
+                  <column datatype='date' name='BIRTHDATE' ordinal='1' />
+                  <column datatype='date' name='DEATHDATE' ordinal='2' />
+                  <column datatype='string' name='PREFIX' ordinal='3' />
+                  <column datatype='string' name='FIRST' ordinal='4' />
+                  <column datatype='string' name='LAST' ordinal='5' />
+                  <column datatype='string' name='SUFFIX' ordinal='6' />
+                  <column datatype='string' name='MAIDEN' ordinal='7' />
+                  <column datatype='string' name='MARITAL' ordinal='8' />
+                  <column datatype='string' name='RACE' ordinal='9' />
+                  <column datatype='string' name='ETHNICITY' ordinal='10' />
+                  <column datatype='string' name='GENDER' ordinal='11' />
+                  <column datatype='string' name='BIRTHPLACE' ordinal='12' />
+                  <column datatype='string' name='ADDRESS' ordinal='13' />
+                  <column datatype='string' name='CITY' ordinal='14' />
+                  <column datatype='string' name='STATE' ordinal='15' />
+                  <column datatype='string' name='COUNTY' ordinal='16' />
+                  <column datatype='integer' name='ZIP' ordinal='17' />
+                  <column datatype='real' name='LAT' ordinal='18' />
+                  <column datatype='real' name='LON' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='patients.csv_7AFDA4383B6F48A59F00489753452583' table='[Extract].[patients.csv_7AFDA4383B6F48A59F00489753452583]' type='table' />
+            </properties>
+          </object>
+          <object caption='payers.csv' id='payers.csv_99D48F1B105A4A6C8F477E3958AB79BF'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='payers.csv' table='[payers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Id' ordinal='0' />
+                  <column datatype='string' name='NAME' ordinal='1' />
+                  <column datatype='string' name='ADDRESS' ordinal='2' />
+                  <column datatype='string' name='CITY' ordinal='3' />
+                  <column datatype='string' name='STATE_HEADQUARTERED' ordinal='4' />
+                  <column datatype='integer' name='ZIP' ordinal='5' />
+                  <column datatype='string' name='PHONE' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='payers.csv_99D48F1B105A4A6C8F477E3958AB79BF' table='[Extract].[payers.csv_99D48F1B105A4A6C8F477E3958AB79BF]' type='table' />
+            </properties>
+          </object>
+          <object caption='procedures.csv' id='procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='procedures.csv' table='[procedures#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='START' ordinal='0' />
+                  <column datatype='datetime' name='STOP' ordinal='1' />
+                  <column datatype='string' name='PATIENT' ordinal='2' />
+                  <column datatype='string' name='ENCOUNTER' ordinal='3' />
+                  <column datatype='integer' name='CODE' ordinal='4' />
+                  <column datatype='string' name='DESCRIPTION' ordinal='5' />
+                  <column datatype='integer' name='BASE_COST' ordinal='6' />
+                  <column datatype='integer' name='REASONCODE' ordinal='7' />
+                  <column datatype='string' name='REASONDESCRIPTION' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C' table='[Extract].[procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C]' type='table' />
+            </properties>
+          </object>
+          <object caption='procedures.csv1' id='procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0'>
+            <properties context=''>
+              <relation connection='textscan.1v03thl19st9or11a9sqo1sdji21' name='procedures.csv1' table='[procedures#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='datetime' name='START' ordinal='0' />
+                  <column datatype='datetime' name='STOP' ordinal='1' />
+                  <column datatype='string' name='PATIENT' ordinal='2' />
+                  <column datatype='string' name='ENCOUNTER' ordinal='3' />
+                  <column datatype='integer' name='CODE' ordinal='4' />
+                  <column datatype='string' name='DESCRIPTION' ordinal='5' />
+                  <column datatype='integer' name='BASE_COST' ordinal='6' />
+                  <column datatype='integer' name='REASONCODE' ordinal='7' />
+                  <column datatype='string' name='REASONDESCRIPTION' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0' table='[Extract].[procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[DESCRIPTION]' />
+              <expression op='[Description]' />
+            </expression>
+            <first-end-point object-id='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' />
+            <second-end-point object-id='data_dictionary.csv_9CED18FBA78948748F436093CA36FA0D' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Id]' />
+              <expression op='[Id (organizations.csv)]' />
+            </expression>
+            <first-end-point object-id='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' />
+            <second-end-point object-id='organizations.csv_0BC7E1D922E94CF894175863D08340C7' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Id]' />
+              <expression op='[Id (patients.csv)]' />
+            </expression>
+            <first-end-point object-id='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' />
+            <second-end-point object-id='patients.csv_7AFDA4383B6F48A59F00489753452583' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Id]' />
+              <expression op='[Id (payers.csv)]' />
+            </expression>
+            <first-end-point object-id='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' />
+            <second-end-point object-id='payers.csv_99D48F1B105A4A6C8F477E3958AB79BF' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Id (patients.csv)]' />
+              <expression op='[PATIENT (procedures.csv)]' />
+            </expression>
+            <first-end-point object-id='patients.csv_7AFDA4383B6F48A59F00489753452583' />
+            <second-end-point object-id='procedures.csv_66CC1D9CC5A44127B89B273F0087AE8C' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Id]' />
+              <expression op='[ENCOUNTER (procedures.csv1)]' />
+            </expression>
+            <first-end-point object-id='encounters.csv_C3AFAC22E85E41A9B56028B880BC25A5' />
+            <second-end-point object-id='procedures.csv_6EB432F1CBCC4606A793E01D89EFDBB0' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{61855A74-BA68-46DE-B84D-6359EE89A131}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CCF538FD-D10D-43D9-B314-7D6F07517167}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
